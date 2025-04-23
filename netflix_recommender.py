@@ -1,16 +1,7 @@
 # Netflix-Style Movie Recommendation Engine using Keras & TensorFlow
 
-# 📦 Import required libraries
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from keras.models import Model
-from keras.layers import Input, Embedding, Dot, Flatten, Dense
-from sklearn.metrics import mean_squared_error
-import math
-
 # 📁 Load Dataset (make sure your CSV has 'userId', 'movieId', 'rating')
+
 df = pd.read_csv("/content/drive/MyDrive/Movies datasets/movies.csv")  # Replace with your movie CSV file
 
 # 🧹 Preprocess data
